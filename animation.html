@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keywords and Animations</title>
+</head>
+<style>
+.container{
+    background-color: greenyellow;
+}
+.box{
+    background-color: green;
+    width: 250px;
+    height: 150px;
+    position: relative;
+    /* animation-name: Shaan1; */
+    animation-name: Shaan2;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    /* animation-fill-mode: forwards; */
+    /* animation-timing-function: ease-in-out; */
+    animation-delay: 3s; /*animation will start after 3second*/
+    /* animation-direction: reverse ; */
+    /* animation: animation-name animation-duration animation-timing-function animation-delay; */
+    /* animation: Shaan 5s ease-in 1s; */
+
+}
+@keyframes Shaan2{
+    0%{
+        top:0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    75%{
+        top: 250px;
+        left:250px;
+    }
+    100%{
+        top:250px;
+        left:0px;
+    }
+}
+@keyframes Shaan1{
+    from{
+        width:0px;
+    }
+    to{
+        width: 800px;
+    }
+}
+</style>
+<body>
+    <div class=" container">
+        <div class="box">
+            This is a box
+
+        </div>
+    </div>
+    
+</body>
+</html>
